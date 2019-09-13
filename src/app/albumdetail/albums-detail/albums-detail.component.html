@@ -1,0 +1,11 @@
+<h2 style="text-align: center">Photos page</h2>
+<div style="text-align: center">Filter by title:<input type="text" [(ngModel)] = "searchTitle"/><button (click)="goBack()">Go back!!!</button></div>
+<div>
+    <ul id="photos">
+        <li *ngFor="let photo of (photos | filter: searchTitle); let i = index">
+            <img src="{{ photo?.thumbnailUrl}}}" class="photo" id="{{ i }}" width="200" height="200"><br>
+                <button (click)="removeImage(i)">Remove</button>
+                <h5>Title: "{{ photo?.title | titlecase}}"</h5>
+        </li>     
+    </ul>
+</div>

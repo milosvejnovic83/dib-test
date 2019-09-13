@@ -1,0 +1,10 @@
+<h2 style="text-align:center">Albums page</h2>
+<div>
+    <ul id="albums">
+        <li *ngFor="let album of albums">
+                <a routerLink="/album-detail/{{ album?.id }}" routerLinkActive="active"><img src="assets/garfield.png" class="album" width="200" height="200"></a>
+                <h5>Title: "{{ album?.title | titlecase}}"</h5>
+                <h5>User name: {{ users[album.userId - 1]?.name }}</h5> 
+        </li>     
+    </ul>
+</div>

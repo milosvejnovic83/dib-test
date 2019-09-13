@@ -1,0 +1,23 @@
+ul {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+li {
+    display: inline-block;
+}
+
+h5 {
+    width: 200px;
+    white-space:wrap;
+}
+
+button {
+    margin-left: 5px;
+}
+
+.photo {
+    margin: 5px;
+}

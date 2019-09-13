@@ -1,0 +1,20 @@
+ul {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+li {
+    display: inline-block;
+}
+
+h5 {
+    width: 200px;
+    white-space:wrap;
+}
+
+.album {
+    margin: 5px;
+    border: 2px solid yellow;
+}
